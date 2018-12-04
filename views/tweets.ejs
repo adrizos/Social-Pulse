@@ -1,0 +1,15 @@
+<% include partials/header %>
+  <div class="container-fluid pb-3" style="background-color:#ffffff">
+    <div id="tweetsTitle" style="padding: 2%">
+      <h5 style="color:#726bb0">Tweets:</h5>
+    </div>
+    <ul class="list-group">
+      <% for(var i=0; i<tweets.length; i++){ %>
+        <li class="list-group-item"> <%= tweets[i] %> Score: <%= scores[i] %> </li>
+      <% } %>
+    </ul>
+  </div>
+  <!-- end of container div -->
+
+
+<% include partials/footer %>
